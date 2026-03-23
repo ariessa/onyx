@@ -8,6 +8,17 @@ Onyx is a privacy-preserving dark pool built as a **Uniswap v4 Hook**. Users shi
 
 <br />
 
+## Deployed Addresses on Base Sepolia
+
+| Contract | Address |
+|---|---|
+| OnyxHook | `0xa3813e4c116d78a85f882b496df7575382478080` |
+| PoolManager | `0xdcdf244ad2a4d83b060d4d7fa4fa62a2232caeee` |
+| Token0 | `0x031e390aa658264679f337054525a4fd3ade79d3` |
+| Token1 | `0xc34d90ba62d33b8fdc03a250e0c69f31f7d5cafd` |
+
+<br />
+
 ## How it works
 
 ```
@@ -89,17 +100,6 @@ forge test -vv
 anvil &
 forge script script/Deploy.s.sol --rpc-url http://localhost:8545 --broadcast
 ```
-
-<br />
-
-## Deployed Addresses (Base Sepolia)
-
-| Contract | Address |
-|---|---|
-| OnyxHook | `0xa3813e4c116d78a85f882b496df7575382478080` |
-| PoolManager | `0xdcdf244ad2a4d83b060d4d7fa4fa62a2232caeee` |
-| Token0 | `0x031e390aa658264679f337054525a4fd3ade79d3` |
-| Token1 | `0xc34d90ba62d33b8fdc03a250e0c69f31f7d5cafd` |
 
 <br />
 
