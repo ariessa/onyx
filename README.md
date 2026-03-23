@@ -4,6 +4,10 @@
 
 # Onyx
 
+<p align="center">
+  <img src="onyx.jpg" alt="Onyx" width="300" />
+</p>
+
 Onyx is a privacy-preserving dark pool built as a **Uniswap v4 Hook**. Users shield tokens, submit swap intents, and a permissionless settler nets opposing sides — only the residual hits the AMM. An observer sees one aggregated swap, not individual amounts or destinations.
 
 <br />
