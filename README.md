@@ -1,12 +1,12 @@
-# Onyx Protocol
-
-> Trade in the Shadows. Settle in the Light.
-
-**Submission for Uniswap Hook Incubator — Cohort 8**
+# Onyx
 
 > **Disclaimer**: This software is a proof-of-concept for educational purposes only. It has not been audited and is not intended for production use. The authors assume no liability for any loss of funds or other damages resulting from the use of this code. Use at your own risk.
 
+**Submission for Uniswap Hook Incubator — Cohort 8**
+
 Onyx is a privacy-preserving dark pool built as a **Uniswap v4 Hook**. Users shield tokens, submit swap intents, and a permissionless settler nets opposing sides — only the residual hits the AMM. An observer sees one aggregated swap, not individual amounts or destinations.
+
+<br />
 
 ## How it works
 
@@ -17,9 +17,13 @@ submitIntent()  — add a swap intent to the current batch
 settleBatch()   — net buys vs sells, swap residual via Uniswap v4, distribute to stealth addresses
 ```
 
+<br />
+
 ## Requirements
 
 - [Foundry](https://book.getfoundry.sh/getting-started/installation)
+
+<br />
 
 ## Setup
 
@@ -28,6 +32,8 @@ git clone --recurse-submodules <repo>
 cd onyx
 forge build
 ```
+
+<br />
 
 ## Tests
 
@@ -75,12 +81,16 @@ forge test -vv
 - `test_getBatchIntent_returnsCorrectData` — view helper returns correct intent data
 - `test_hookPermissions` — only `beforeSwap` is enabled
 
+<br />
+
 ## Deploy (local)
 
 ```bash
 anvil &
 forge script script/Deploy.s.sol --rpc-url http://localhost:8545 --broadcast
 ```
+
+<br />
 
 ## Deployed Addresses (Base Sepolia)
 
@@ -90,6 +100,8 @@ forge script script/Deploy.s.sol --rpc-url http://localhost:8545 --broadcast
 | PoolManager | `0xdcdf244ad2a4d83b060d4d7fa4fa62a2232caeee` |
 | Token0 | `0x031e390aa658264679f337054525a4fd3ade79d3` |
 | Token1 | `0xc34d90ba62d33b8fdc03a250e0c69f31f7d5cafd` |
+
+<br />
 
 ## Deploy (Base Sepolia)
 
@@ -107,6 +119,8 @@ forge script script/DeployBaseSepolia.s.sol \
   -vvvv
 
 ```
+
+<br />
 
 ### Verify on BaseScan (manual)
 
@@ -133,6 +147,8 @@ forge verify-contract <TOKEN_ADDRESS> lib/v4-core/src/test/TestERC20.sol:TestERC
   --show-standard-json-input > token.json
 ```
 
+<br />
+
 ## Architecture
 
 ```
@@ -146,6 +162,8 @@ script/
 test/
   OnyxHook.t.sol        # 26 unit tests
 ```
+
+<br />
 
 ## License
 
