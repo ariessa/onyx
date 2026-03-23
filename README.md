@@ -1,8 +1,6 @@
 # Onyx
 
-> **Disclaimer**: This software is a proof-of-concept for educational purposes only. It has not been audited and is not intended for production use. The authors assume no liability for any loss of funds or other damages resulting from the use of this code. Use at your own risk.
-
-**Submission for Uniswap Hook Incubator — Cohort 8**
+> **Disclaimer**: This is a submission for Uniswap Hook Incubator — Cohort 8. This software is a proof-of-concept for educational purposes only. It has not been audited and is not intended for production use. The authors assume no liability for any loss of funds or other damages resulting from the use of this code. Use at your own risk.
 
 Onyx is a privacy-preserving dark pool built as a **Uniswap v4 Hook**. Users shield tokens, submit swap intents, and a permissionless settler nets opposing sides — only the residual hits the AMM. An observer sees one aggregated swap, not individual amounts or destinations.
 
@@ -21,7 +19,7 @@ settleBatch()   — net buys vs sells, swap residual via Uniswap v4, distribute 
 
 ## Requirements
 
-- [Foundry](https://book.getfoundry.sh/getting-started/installation)
+- Foundry
 
 <br />
 
