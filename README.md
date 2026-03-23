@@ -1,6 +1,8 @@
-# Onyx
+> **Disclaimer**: This is a submission for Uniswap Hook Incubator — Cohort 8. It has not been audited and is not intended for production use. The author assumes no liability for any loss of funds or other damages resulting from the use of this code. Use at your own risk.
 
-> **Disclaimer**: This is a submission for Uniswap Hook Incubator — Cohort 8. This software is a proof-of-concept for educational purposes only. It has not been audited and is not intended for production use. The authors assume no liability for any loss of funds or other damages resulting from the use of this code. Use at your own risk.
+<br />
+
+# Onyx
 
 Onyx is a privacy-preserving dark pool built as a **Uniswap v4 Hook**. Users shield tokens, submit swap intents, and a permissionless settler nets opposing sides — only the residual hits the AMM. An observer sees one aggregated swap, not individual amounts or destinations.
 
